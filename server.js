@@ -29,3 +29,9 @@ bot.status({
   text: "s.help",
   type: "PLAYING"
 });
+
+bot.variables({
+  prefix: "s.",
+  myName: "money",
+  money: 500
+});
