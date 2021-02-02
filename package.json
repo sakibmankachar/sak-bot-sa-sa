@@ -10,6 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "dbd.js": "^1.9.4",
     "express": "^4.17.1"
   },
   "engines": {
