@@ -1,8 +1,8 @@
-const dbd = require("dbd.js");
+var dbd = require("dbd.js");
 
-const bot = new dbd.Bot({
-  token: "TOKEN",
-  prefix: "!"
+var bot = new dbd.Bot({
+  token: process.env.BOT_TOKEN,
+  prefix: "s."
 });
 
 bot.onMessage();
@@ -24,3 +24,8 @@ for (const files of folders) {
     });
   }
 }
+
+bot.status({
+  text: "s.help",
+  type: "PLAYING"
+});
