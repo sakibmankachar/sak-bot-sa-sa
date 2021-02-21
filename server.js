@@ -33,7 +33,7 @@ bot.status({
   text: "$serverCount servers",
   type: "WATCHING",
   time: 300
-
+})
 bot.variables({
   prefix: "s.",
   money: 500
@@ -102,7 +102,7 @@ bot.command({
 $description[Wanna to learn how to make welcome and leave logs with BDFD?
 Download this file and learn
 Download link [Click Here](https://www.dropbox.com/s/88l9rgm9e0bxz39/Guide%20for%20HTMWALLWBDFD.doc?dl=0) or [Click Here](https://cdn.discordapp.com/attachments/798154805699805234/800273753682214932/Guide_for_HTMWALLWBDFD.doc)
-Note: Remember to learn the Main Guide. For Main Guide type `s.guide`]`
+Note: Remember to learn the Main Guide. For Main Guide type s.guide]`
 });
 
 bot.command({
@@ -232,8 +232,8 @@ bot.onLeave()
 
 bot.command({
 name: "setwelcome",
-code: `$setServerVar[welcome;$mentionedChannels[>;yes]]
-$description[The channel <#$mentionedChannels[>;yes]> was setted as welcome channel, i will welcome the new users in that channel]
+code: `$setServerVar[welcome;$mentionedChannels[1]]
+$description[The channel <#$mentionedChannels[1]> was setted as welcome channel, i will welcome the new users in that channel]
 $footer[Setted by $username[$authorID]#$discriminator[$authorID]]
 $onlyPerms[manageserver;You need manage server permissions to set this!]
 $color[fffff1]
@@ -242,8 +242,8 @@ $addTimestamp`
 
 bot.command({
 name: "setleave",
-code: `$setServerVar[goodbye;$mentionedChannels[>;yes]]
-$description[The channel <#$mentionedChannels[>;yes]> was setted as goodbye channel, i will say goodbye in that channel to the users that leave]
+code: `$setServerVar[goodbye;$mentionedChannels[1]]
+$description[The channel <#$mentionedChannels[1]> was setted as goodbye channel, i will say goodbye in that channel to the users that leave]
 $footer[Setted by $username[$authorID]#$discriminator[$authorID]]
 $onlyPerms[manageserver;You need manage server permissions to set this!]
 $color[fffff1]
